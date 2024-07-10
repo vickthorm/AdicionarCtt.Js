@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); /* Cor do texto */
+}
+
+header {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 {
+    padding: 5px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #29ce41;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 0 40px rgb(51, 254, 0); /* Aumente o valor de blur radius para criar mais espaçamento */
+    border-radius: 20px; /* Borda arredondada */
+}
+
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input {
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    width: 60%; /* Largura ajustável */
+    margin-right: 10px; /* Espaçamento entre os inputs */
+}
+
+form button {
+    background-color: rgb(2, 80, 13);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px 20px; /* Espaçamento interno ajustável */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse; /* Colapso de bordas da tabela */
+}
+
+table th {
+    border-bottom: 2px solid black;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.resultado {
+    padding: 6px 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: rgb(2, 80, 13);
+}
+
+.reprovado {
+    background-color: red;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin-top: 5%;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form input, form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table th, table td {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
