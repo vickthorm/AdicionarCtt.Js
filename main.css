@@ -67,9 +67,7 @@ form button {
     padding: 8px 20px; /* Espaçamento interno ajustável */
     border-radius: 5px; /* Borda arredondada */
 }
-form input:hover {
-    border-bottom-color: rgb(79, 195, 94); /* Cor da borda ao passar o mouse */
-}
+
 
 table {
     width: 100%;
